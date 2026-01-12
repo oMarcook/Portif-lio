@@ -6,23 +6,26 @@
 
 body{
     background-color: #404040;
+    font-family: "Instrument Serif", serif;
 }
 header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 100px;
+    padding: 5px 100px;
     background-color: #636363;
 }
 
- .top a{
+ .top a {
     position: relative;
-    font-size: 1.1em;
+    top: 15px;
+    font-size: 150%;
     text-decoration: none;
-    margin-left: 300px;
+    margin-left: 330px;
     color: black;
- }
-  
+    
+}
+
 
 
