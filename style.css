@@ -51,3 +51,31 @@ header {
     
 }
 
+.icons img:hover {
+    transform: scale(1.2);
+    
+}
+ header .icons {
+    position: absolute;
+    top: 20px;
+    right: 90px;
+ }
+ 
+ .bemVindo {
+    position: relative;
+    top: 80px;
+   margin-top: 100px;
+    font-size: 5rem;
+    width: 466px;
+    height: 375px;
+ }
+
+ .prazer {
+    position: absolute;
+    font-size: 4rem;
+    width: 218px;
+    height: 217px;
+    margin-left: 77rem;
+    margin-top: -15rem;
+    
+ }
