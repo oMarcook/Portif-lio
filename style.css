@@ -1,16 +1,21 @@
 * {
- margin: 0;
- padding: 0;
- box-sizing: border-box;
- transition: 0.2s linear;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 0.2s;
 }
 
-body{
+html, body {
+  height: 100%;
+  font-family: "Instrument Serif", serif;
+}
 
-    font-family: "Instrument Serif", serif;
-    margin: 0;
-    min-height: 100vh;
-    background: radial-gradient(circle, #363636 23%, #A6A6A6 55%);
+.sec1 {
+  min-height: 100vh;
+  width: 100%;
+  background: radial-gradient(circle, #363636 23%, #A6A6A6 55%);
+  display: flex;
+  flex-direction: column;
 }
 
 header {
@@ -63,9 +68,9 @@ header {
  
  .bemVindo {
     position: relative;
-    top: 80px;
-   margin-top: 100px;
-    font-size: 5rem;
+    margin-left: 18rem;
+    margin-top: 15rem;
+    font-size: 6rem;
     width: 466px;
     height: 375px;
  }
@@ -75,13 +80,17 @@ header {
     font-size: 4rem;
     width: 218px;
     height: 217px;
-    margin-left: 77rem;
-    margin-top: -15rem;
+    margin-left: 90rem;
+    margin-top: -17rem;
     
  }
 
     .dev {
-       
-     
-        
+     font-size: 23px;
     }
+
+
+
+    
+    
+    
