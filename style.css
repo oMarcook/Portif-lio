@@ -90,8 +90,9 @@ header .icons {
     font-size: 6rem;
     width: 466px;
     height: 375px;
-     opacity: 0;
-    transform: translateY(40px);
+  opacity: 0;
+    transform: translateY(50px);
+    transition: all 3s ease;
 }
 
 .prazer {
@@ -101,27 +102,27 @@ header .icons {
     height: 217px;
     margin-left: 90rem;
     margin-top: -17rem;
-     opacity: 0;
-    transform: translateY(40px);
+  opacity: 0;
+    transform: translateY(50px);
+    transition: all 3s ease;
 }
 
 .dev {
     font-size: 23px;
     margin-left: 18rem;
     margin-top: -1rem;
-     opacity: 0;
-    transform: translateY(40px);
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 3s ease;
+}
     
-}
-.show-text {
-  animation: fadeUp 5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
-}
 
-@keyframes fadeUp {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+.bemVindo.show,
+.prazer.show,
+.dev.show,
+.sobre.show {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .sec2 {
@@ -136,9 +137,10 @@ align-items: center;
 margin-left: 150px;
 height: 150vh;
 font-size: 3rem;
- opacity: 0;
+  opacity: 0;
     transform: translateY(50px);
-    transition: all 5s ease;
+    transition: all 3s ease;
+
 }
 
 .sobre.show {
