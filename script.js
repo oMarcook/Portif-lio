@@ -1,40 +1,42 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-  //  SCROLL DO INDICADOR
-    const scrollIndicator = document.querySelector('.scroll-indicator');
+  // 🔥 SCROLL DO INDICADOR
+  const scrollIndicator = document.querySelector('.scroll-indicator');
 
-    if (scrollIndicator) {
+  if (scrollIndicator) {
     scrollIndicator.addEventListener('click', () => {
-        const section = document.querySelector('.sec2');
+      const section = document.querySelector('.sec2');
 
+      if (section) {
         const offset = 100;
         const top = section.offsetTop - offset;
 
-            window.scrollTo({
-        top: top,
-        behavior: 'smooth'
+        window.scrollTo({
+          top: top,
+          behavior: 'smooth'
+        });
+      }
     });
-    });
-    }
+  }
 
- 
-    const elementos = document.querySelectorAll(
-    '.sobre, .bemVindo, .prazer, .dev'
-    );
+  // 🔥 ELEMENTOS QUE VÃO ANIMAR (adicionei sec3)
+  const elementos = document.querySelectorAll(
+    '.sobre, .bemVindo, .prazer, .dev, .sec3'
+  );
 
-  //  INTERSECTION OBSERVER (anima e repete)
-    const observer = new IntersectionObserver((entries) => {
+  // 🔥 OBSERVER (anima e repete)
+  const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
-        if (entry.isIntersecting) {
+      if (entry.isIntersecting) {
         entry.target.classList.add('show');
-        } else {
-        entry.target.classList.remove('show'); //  permite repetir
-        }
+      } else {
+        entry.target.classList.remove('show');
+      }
     });
-    }, {
+  }, {
     threshold: 0.3
-    });
+  });
 
-    elementos.forEach(el => observer.observe(el));
+  elementos.forEach(el => observer.observe(el));
 
 });

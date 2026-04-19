@@ -178,3 +178,76 @@ font-size: 3rem;
         opacity: 0;
     }
 }
+
+.sec3 {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+      position: relative;
+    z-index: 1;
+    opacity: 0;
+    transform: translateY(60px);
+    transition: all 5s ease;
+}
+
+.sec3.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+.contato-container {
+    text-align: center;
+}
+
+.contato-container h2 {
+    font-size: 3rem;
+    color: #ffffff;
+}
+
+.contato-container p {
+    margin-top: 10px;
+    color: #8b949e;
+}
+
+.contato-cards {
+    margin-top: 50px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 220px;
+    padding: 30px 20px;
+    background: #161b22;
+    border-radius: 12px;
+    text-decoration: none;
+    color: #c9d1d9;
+    transition: 0.3s;
+    border: 1px solid transparent;
+}
+
+.card:hover {
+    transform: translateY(-8px) scale(1.03);
+    border: 1px solid #4da6ff;
+    background: #0d1117;
+}
+
+.icon {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+
+.card span {
+    font-size: 0.9rem;
+    color: #8b949e;
+}
